@@ -33,7 +33,7 @@ class Articles extends Component {
     if (this.state.topic) {
       //define query variables
       const apiKey = "e497d9b362d54fbfa57fcc3c48800b95";
-      let queryURL = `http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${apiKey}&q=${this.state.topic}`;
+      let queryURL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${apiKey}&q=${this.state.topic}`;
       
       axios.get(queryURL)
         .then(res=>{
